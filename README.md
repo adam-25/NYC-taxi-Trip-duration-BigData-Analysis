@@ -90,8 +90,18 @@ We later pre-processed the data and generated a radar plot, which is another bes
 
 <img width="712" alt="Screenshot 2023-01-19 at 10 53 43 PM" src="https://user-images.githubusercontent.com/92228157/213627087-3733bc39-0817-48d5-a5a8-9afdb77bbfbc.png">
 
+With scikit-learn, we were able to better visualize our results and perceive differences in clusters but 75% accuracy result from our Gradient Boosted trees regression model, which isn't very high, but enough to be interesting and for future work.
+
 # VI. Discussions
+
+Numerically, with 75% accuracy, our Gradient Boosted trees regression model doesn't seem tremendously "accurate" or "precise". However, with the limited resources and as it takes huge time for the machine learning model to get train, we think achieving 75% accuracy is better than other solutions with the lower accuracy and higher RMSE.
 
 ## Potential issues
 
+- Limited Hardware: To use this huge data set and build machine learning models, it requires to have really good hardwares with good unified memory, better SSD storage and most importantly a great GPU. We have limited hardware resources, hence we were not able to experiment our machine learning model with several different hyper tuning parameters and as it takes lot of time to train machine learning model with more hyperparameters we restricted our machine learning model with the highest accracy of 75%.
+
 ## Future work and Closing thoughts
+
+- As for utility, we believe our solution, with just a bit more tuning, can actually be useful and create value. We believe this would be of great interest to those, who like to predict NYC taxi trip duration during peak hours.
+
+- For the future work, we planned to use cloud services like AWS or GCP to host our data and create machine learning models so, we do not have to restrict ourselves and our machine learning models. Also, in the future we plan to get real time data from some of the open source API and build a pipeline so, our model improves with the time and more important data patterns.
